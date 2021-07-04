@@ -32,6 +32,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libutils-v32.so')
         .remove_needed('libhidltransport.so')
         .binary_regex_replace(b'_ZN7android6Thread3runEPKcim', b'_ZN7utils326Thread3runEPKcim'),
+    'vendor/lib64/libiu456_datapath_processor.so': blob_fixup()
+        .replace_needed('libOpenCL.so', 'libGLES_mali.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(

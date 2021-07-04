@@ -27,6 +27,9 @@ vendor/lib64/libexynoscamera3.so
 vendor/lib64/libexynoscamera_bayergdc_plugin.so
 vendor/lib64/libexynoscamera_fakemultiframe.so
 vendor/lib64/libexynoscamera_vpl_plugin.so
+vendor/lib64/libTOFProc_interface.so
+vendor/lib64/libdatazip.so
+vendor/lib64/libiu456_datapath_processor.so
 
 # Camera (Firmware)
 vendor/firmware/dual_cal_wide_swide.bin
