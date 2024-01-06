@@ -58,10 +58,6 @@ vendor/firmware/nfc/sec_s3nsen4_firmware.bin
 # RIL
 vendor/etc/floating_feature.xml
 
-# RIL - G980FXXSCDUK1
--vendor/lib64/libsec-ril-dsds.so|7ed9ea9e8b4a70759f1c1dc039b847868ac38d06
--vendor/lib64/libsec-ril.so|cfc54d1a2048cbea61900cc034808e7b3ee23ad4
-
 # Teegris Firmware
 vendor/tee/00000000-0000-0000-0000-000000534b4d
 vendor/tee/00000000-0000-0000-0000-0000534b504d
