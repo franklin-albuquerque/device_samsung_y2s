@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_x1slte.mk
+    $(LOCAL_DIR)/aosp_x1slte.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_x1slte-user \
-    lineage_x1slte-userdebug \
-    lineage_x1slte-eng
+    aosp_x1slte-user \
+    aosp_x1slte-userdebug \
+    aosp_x1slte-eng
