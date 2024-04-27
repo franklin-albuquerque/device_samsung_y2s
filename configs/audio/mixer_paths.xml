@@ -5557,9 +5557,9 @@
 	<!-- media input volume -->
 	<path name="gain-media-mic">
 		<ctl name="VTS DMIC GAIN MODE0" value="6168" />
-		<ctl name="VTS DMIC GAIN MODE1" value="6168" />
-		<ctl name="VTS CONTROL DMIC AUD GAIN0" value="27" />
-		<ctl name="VTS CONTROL DMIC AUD GAIN1" value="17" />
+		<ctl name="VTS DMIC GAIN MODE1" value="5140" />
+		<ctl name="VTS CONTROL DMIC AUD GAIN0" value="9" />
+		<ctl name="VTS CONTROL DMIC AUD GAIN1" value="32" />
 	</path>
 
 	<path name="gain-media-2nd-mic">
