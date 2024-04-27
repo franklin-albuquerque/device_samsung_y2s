@@ -5650,11 +5650,11 @@
 
 	<path name="gain-camcorder-multi-mic">
 		<ctl name="VTS DMIC GAIN MODE0" value="6168" />
-		<ctl name="VTS DMIC GAIN MODE1" value="5911" />
+		<ctl name="VTS DMIC GAIN MODE1" value="6168" />
 		<ctl name="VTS DMIC GAIN MODE2" value="6168" />
-		<ctl name="VTS CONTROL DMIC AUD GAIN0" value="34" />
-		<ctl name="VTS CONTROL DMIC AUD GAIN1" value="8" />
-		<ctl name="VTS CONTROL DMIC AUD GAIN2" value="25" />
+		<ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+		<ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+		<ctl name="VTS CONTROL DMIC AUD GAIN2" value="0" />
 	</path>
 
 	<path name="gain-camcorder-headphone-mic">
