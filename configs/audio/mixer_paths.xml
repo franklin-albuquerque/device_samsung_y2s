@@ -2896,17 +2896,15 @@
 	</path>
 
 	<path name="media-mic">
-    		<!-- nxp bargein using param index 0 -->
-		<ctl name="ABOX Call Path Param" value="0" />
-		<ctl name="ABOX SE Standalone" value="1" />
-		<ctl name="ABOX OEM NXP Mode" value="2" />
-		<path name="dev-multi-mic" />
-		<path name="set-call-seriallif-wdma4-16bit-config" />
-		<path name="route-seriallif-16bit-to-wdma4" />
-		<path name="route-wdma4-to-tdmdemux3" />
-		<path name="route-call-spkrcv-refdata-vssadapter_b" />
-		<path name="route-tdmdemux3-to-vssadapter_a" />
-		<path name="route-vssadapter-txse1-chmatcher-vpcmdai0" />
+		<path name="dev-main-mic" />
+		<path name="route-seriallif-24bit-to-wdma4" />
+		<path name="route-wdma4-to-tdmdemux0" />
+    		<!-- primary stream node -->
+		<path name="route-tdmdemux0-to-vpcmindai0" />
+    		<!-- fast stream node -->
+		<path name="route-tdmdemux0-to-vpcmindai1" />
+    		<!-- low latency stream node -->
+		<path name="route-tdmdemux0-to-vpcmindai2" />
 	</path>
 
 	<path name="media-2nd-mic">
@@ -3147,6 +3145,7 @@
 	<!-- Recognition Input paths -->
 	<path name="recognition-mic">
 		<path name="media-mic" />
+		<ctl name="ABOX SE Standalone" value="10" />
 	</path>
 
 	<path name="recognition-2nd-mic">
@@ -5556,10 +5555,8 @@
 	<!-- Input stage volume -->
 	<!-- media input volume -->
 	<path name="gain-media-mic">
-		<ctl name="VTS DMIC GAIN MODE0" value="6168" />
-		<ctl name="VTS DMIC GAIN MODE1" value="5140" />
-		<ctl name="VTS CONTROL DMIC AUD GAIN0" value="9" />
-		<ctl name="VTS CONTROL DMIC AUD GAIN1" value="32" />
+		<ctl name="VTS DMIC GAIN MODE0" value="8738" />
+		<ctl name="VTS CONTROL DMIC AUD GAIN0" value="5" />
 	</path>
 
 	<path name="gain-media-2nd-mic">
@@ -5580,7 +5577,8 @@
 
 	<!-- voice recording input volume -->
 	<path name="gain-recording-mic">
-		<path name="gain-media-mic" />
+		<ctl name="VTS DMIC GAIN MODE0" value="6168" />
+		<ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
 	</path>
 
 	<path name="gain-recording-2nd-mic">
@@ -5633,7 +5631,8 @@
 
 	<!-- camcorder input volume -->
 	<path name="gain-camcorder-mic">
-		<path name="gain-media-mic" />
+		<ctl name="VTS DMIC GAIN MODE0" value="6168" />
+		<ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
 	</path>
 
 	<path name="gain-camcorder-2nd-mic">
@@ -5676,7 +5675,8 @@
 
 	<!-- recognition input volume -->
 	<path name="gain-recognition-mic">
-		<path name="gain-media-mic" />
+		<ctl name="VTS DMIC GAIN MODE0" value="5140" />
+		<ctl name="VTS CONTROL DMIC AUD GAIN0" value="32" />
 	</path>
 
 	<path name="gain-recognition-2nd-mic">
