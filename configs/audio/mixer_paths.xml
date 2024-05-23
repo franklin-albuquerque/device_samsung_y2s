@@ -2896,7 +2896,7 @@
 	</path>
 
 	<path name="media-mic">
-		<path name="dev-main-mic" />
+		<path name="dev-dual-mic" />
 		<path name="route-seriallif-24bit-to-wdma4" />
 		<path name="route-wdma4-to-tdmdemux0" />
     		<!-- primary stream node -->
@@ -5556,7 +5556,9 @@
 	<!-- media input volume -->
 	<path name="gain-media-mic">
 		<ctl name="VTS DMIC GAIN MODE0" value="8738" />
+		<ctl name="VTS DMIC GAIN MODE1" value="8738" />
 		<ctl name="VTS CONTROL DMIC AUD GAIN0" value="5" />
+		<ctl name="VTS CONTROL DMIC AUD GAIN1" value="5" />
 	</path>
 
 	<path name="gain-media-2nd-mic">
@@ -5651,9 +5653,9 @@
 		<ctl name="VTS DMIC GAIN MODE0" value="6168" />
 		<ctl name="VTS DMIC GAIN MODE1" value="6168" />
 		<ctl name="VTS DMIC GAIN MODE2" value="6168" />
-		<ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
-		<ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
-		<ctl name="VTS CONTROL DMIC AUD GAIN2" value="0" />
+		<ctl name="VTS CONTROL DMIC AUD GAIN0" value="8" />
+		<ctl name="VTS CONTROL DMIC AUD GAIN1" value="8" />
+		<ctl name="VTS CONTROL DMIC AUD GAIN2" value="8" />
 	</path>
 
 	<path name="gain-camcorder-headphone-mic">
