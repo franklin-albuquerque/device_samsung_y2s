@@ -30,7 +30,7 @@ fi
 
 set -e
 
-export DEVICE=x1slte
+export DEVICE=x1s
 export DEVICE_COMMON=universal9830-common
 export VENDOR=samsung
 

@@ -16,7 +16,7 @@
 # inherit from common
 include device/samsung/universal9830-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/samsung/x1slte
+DEVICE_PATH := device/samsung/x1s
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
@@ -27,10 +27,10 @@ BOARD_CUSTOM_BT_CONFIG := $(DEVICE_PATH)/bluetooth/libbt_vndcfg.txt
 TARGET_SCREEN_DENSITY := 480
 
 # Kernel
-TARGET_KERNEL_CONFIG := exynos9830-x1slte_defconfig
+TARGET_KERNEL_CONFIG := exynos9830-x1sxxx_defconfig
 
 # OTA
-TARGET_OTA_ASSERT_DEVICE := x1slte
+TARGET_OTA_ASSERT_DEVICE := x1s
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
@@ -51,4 +51,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION                        := VER_0_8_X
 
 # inherit from the proprietary version
--include vendor/samsung/x1slte/BoardConfigVendor.mk
+-include vendor/samsung/x1s/BoardConfigVendor.mk

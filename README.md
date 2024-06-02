@@ -1,6 +1,6 @@
 Copyright 2023 - The LineageOS Project
 
-Device configuration for Samsung Galaxy S20 LTE (SM-G980F).
+Device configuration for Samsung Galaxy S20 5G (SM-G981B).
 ========================================
 
 Basic   | Specification List
