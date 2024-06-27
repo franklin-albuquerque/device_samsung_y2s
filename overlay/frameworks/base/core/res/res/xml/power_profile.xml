@@ -2,10 +2,10 @@
 <device name="Android">
     <item name="none">0</item>
     <item name="ambient.on.display0">26.3</item>
-    <item name="screen.on.display0">78</item>
-    <item name="screen.full.display0">279</item>
+    <item name="screen.on.display0">83</item>
+    <item name="screen.full.display0">320</item>
     <item name="audio">52</item>
-    <item name="video">223</item>
+    <item name="video">227</item>
     <item name="camera.flashlight">130</item>
     <item name="camera.avg">289.7</item>
     <item name="gps.on">94</item>
@@ -151,8 +151,8 @@
     </array>
     <item name="cpu.suspend">7.71</item>
     <item name="cpu.idle">29</item>
-    <item name="battery.capacity">3880</item>
-    <item name="battery.typical.capacity">4000</item>
+    <item name="battery.capacity">4370</item>
+    <item name="battery.typical.capacity">4500</item>
     <item name="wifi.controller.idle">1</item>
     <item name="wifi.controller.rx">65</item>
     <item name="wifi.controller.tx">265</item>

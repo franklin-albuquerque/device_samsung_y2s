@@ -1,5 +1,5 @@
 ## Bluetooth
-bluetooth.device.default_name=Galaxy S20
+bluetooth.device.default_name=Galaxy S20+
 
 ## Fingerprint
 ro.vendor.fingerprint.type=udfps
