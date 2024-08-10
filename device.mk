@@ -30,6 +30,11 @@ PRODUCT_PACKAGES += \
 TARGET_SCREEN_HEIGHT := 3200
 TARGET_SCREEN_WIDTH := 1440
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint-service.samsung \
+    init.udfps.rc
+
 # Overlays 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
