@@ -9,7 +9,6 @@
 function blob_fixup() {
     case "${1}" in
         vendor/lib64/libexynoscamera3.so)
-            "${PATCHELF}" --add-needed libcamera_shim.so "${2}"
             xxd -p "${2}" | tr -d \\n > "${2}".hex
             # NOP SecCameraIPCtoRIL::enable m_sendRequest()
             sed -i "s/140000940a000014/1f2003d50a000014/g" "${2}".hex
