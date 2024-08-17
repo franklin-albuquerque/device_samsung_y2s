@@ -10,7 +10,9 @@ ro.surface_flinger.set_idle_timer_ms=4000
 ro.surface_flinger.set_touch_timer_ms=4000
 
 # RIL
+ro.radio.noril=no
 ro.telephony.default_network=33,33
+ro.vendor.sec.radio.def_network=9
 
 # WiFi
 wifi.direct.interface=p2p-dev-wlan0

@@ -1,5 +1,5 @@
-# All unpinned blobs are from G981BXXSJHXC1
-# Vendor security patch level 2024-03-01
+# All unpinned blobs are from G981BXXSKHXEA
+# Vendor security patch level 2024-05-01
 
 # Audio (Dolby Atmos)
 vendor/etc/dolby/dax-default.xml
