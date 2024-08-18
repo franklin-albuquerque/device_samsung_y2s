@@ -18,10 +18,21 @@ include device/samsung/universal9830-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/samsung/x1s
 
+# Audio
+BOARD_USE_QUAD_MIC := true
+# BOARD_USE_CAMCORDER_QUAD_MIC := true
+
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
 BOARD_CUSTOM_BT_CONFIG := $(DEVICE_PATH)/bluetooth/libbt_vndcfg.txt
+
+# Camera
+$(call soong_config_set,samsungCameraVars,usage_64bit,true)
+SOONG_CONFIG_NAMESPACES += samsungCameraVars
+SOONG_CONFIG_samsungCameraVars += extra_ids
+# ID=52 is telephoto
+SOONG_CONFIG_samsungCameraVars_extra_ids := 52
 
 # Display
 TARGET_SCREEN_DENSITY := 480

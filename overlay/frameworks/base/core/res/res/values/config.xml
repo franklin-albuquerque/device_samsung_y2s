@@ -43,25 +43,23 @@
          -->
     <string name="config_mainBuiltInDisplayCutout">M 0,0 H -12 V 35 H 12 V 0 H 0 Z @dp</string>
 
-    <!-- The display uses different gamma curves for different refresh rates. It's hard for panel
-         vendor to tune the curves to have exact same brightness for different refresh rate. So
-         flicker could be observed at switch time. The issue is worse at the gamma lower end.
-         In addition, human eyes are more sensitive to the flicker at darker environment.
-         To prevent flicker, we only support higher refresh rates if the display brightness is above
-         a threshold. And the darker environment could have higher threshold.
-         For example, no higher refresh rate if
-             display brightness <= disp0 && ambient brightness <= amb0
-             || display brightness <= disp1 && ambient brightness <= amb1 -->
-    <integer-array name="config_brightnessThresholdsOfPeakRefreshRate">
-        <item>45</item>
-    </integer-array>
-    <integer-array name="config_ambientThresholdsOfPeakRefreshRate">
-        <item>40</item>
-    </integer-array>
+    <!-- Radius of the software rounded corners at the top of the display in its natural
+        orientation. If zero, the value of rounded_corner_radius is used. -->
+    <dimen name="rounded_corner_radius_top">32.0dip</dimen>
 
-    <!-- Default refresh rate in the zone defined by brightness and ambient thresholds.
-         If non-positive, then the refresh rate is unchanged even if thresholds are configured. -->
-    <integer name="config_defaultRefreshRateInZone">120</integer>
+    <!-- Radius of the software rounded corners at the bottom of the display in its natural
+        orientation. If zero, the value of rounded_corner_radius is used. -->
+    <dimen name="rounded_corner_radius_bottom">32.0dip</dimen>
+
+    <!-- The default refresh rate for a given device. Change this value to set a higher default
+         refresh rate. If the hardware composer on the device supports display modes with a higher
+         refresh rate than the default value specified here, the framework may use those higher
+         refresh rate modes if an app chooses one by setting preferredDisplayModeId or calling
+         setFrameRate().
+         If a non-zero value is set for config_defaultPeakRefreshRate, then
+         config_defaultRefreshRate may be set to 0, in which case the value set for
+         config_defaultPeakRefreshRate will act as the default frame rate. -->
+    <integer name="config_defaultRefreshRate">0</integer>
 
     <!-- Whether the device enable the standalone (SA) mode of 5G NR.-->
     <bool name="config_telephony5gStandalone">true</bool>
