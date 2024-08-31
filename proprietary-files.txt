@@ -1,4 +1,4 @@
-# All unpinned blobs are from G981BXXSKHXEA
+# All unpinned blobs are from G986BXXSKHXEA
 # Vendor security patch level 2024-05-01
 
 # Audio (Dolby Atmos)
