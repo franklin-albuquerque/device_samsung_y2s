@@ -6,7 +6,9 @@ ro.vendor.fingerprint.type=udfps
 ro.vendor.fingerprint.sensor_location=720|2500|150
 
 # Graphics
-ro.surface_flinger.use_content_detection_for_refresh_rate=false
+ro.surface_flinger.set_idle_timer_ms=4000
+ro.surface_flinger.set_touch_timer_ms=4000
+ro.surface_flinger.use_content_detection_for_refresh_rate=true
 
 # RIL
 ro.radio.noril=no
