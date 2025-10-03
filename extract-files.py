@@ -35,7 +35,7 @@ blob_fixups: blob_fixups_user_type = {
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'x1s',
+    'y2s',
     'samsung',
     namespace_imports=namespace_imports,
     blob_fixups=blob_fixups,

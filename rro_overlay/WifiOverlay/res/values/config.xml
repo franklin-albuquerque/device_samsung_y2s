@@ -51,5 +51,5 @@
     <bool translatable="false" name="config_wifiSoftapIeee80211axSupported">true</bool>
 
     <!-- Default access point SSID used for tethering -->
-    <string name="wifi_tether_configure_ssid_default" translatable="false">Galaxy S20</string>
+    <string name="wifi_tether_configure_ssid_default" translatable="false">Galaxy S20+</string>
 </resources>
