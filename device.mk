@@ -38,8 +38,7 @@ PRODUCT_COPY_FILES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint-service.samsung \
-    init.udfps.rc
+    android.hardware.biometrics.fingerprint-service.samsung
 
 # Overlays 
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
