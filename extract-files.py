@@ -8,6 +8,11 @@ from extract_utils.fixups_blob import (
     blob_fixup,
     blob_fixups_user_type,
 )
+from extract_utils.fixups_lib import (
+    lib_fixup_remove,
+    lib_fixups,
+    lib_fixups_user_type,
+)
 from extract_utils.main import (
     ExtractUtils,
     ExtractUtilsModule,
@@ -22,6 +27,16 @@ namespace_imports = [
     'hardware/samsung_slsi-linaro/interfaces',
     'vendor/samsung/universal9830-common',
 ]
+
+def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
+    return f'{lib}_{partition}' if partition == 'vendor' else None
+
+lib_fixups: lib_fixups_user_type = {
+    **lib_fixups,
+    (
+        'libuuid',
+    ): lib_fixup_vendor_suffix,
+}
 
 blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/libexynoscamera3.so': blob_fixup()
@@ -40,6 +55,7 @@ module = ExtractUtilsModule(
     'y2s',
     'samsung',
     namespace_imports=namespace_imports,
+    lib_fixups=lib_fixups,
     blob_fixups=blob_fixups,
 )
 
