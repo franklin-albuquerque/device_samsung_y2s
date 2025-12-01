@@ -18,11 +18,6 @@ include device/samsung/universal9830-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/samsung/y2s
 
-# Audio
-$(call soong_config_set,universal9830AudioVars,use_bta2dp_offload,false)
-$(call soong_config_set,universal9830AudioVars,use_quad_mic,true)
-$(call soong_config_set,universal9830AudioVars,use_camcorder_quad_mic,false)
-
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
@@ -59,7 +54,6 @@ WIFI_HIDL_FEATURE_AWARE                       := true
 WIFI_HIDL_FEATURE_DUAL_INTERFACE              := true
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION                        := VER_0_8_X
-$(call soong_config_set,wpa_supplicant_8,board_wlan_bcmdhd_sae,true)
 
 # inherit from the proprietary version
 -include vendor/samsung/y2s/BoardConfigVendor.mk
