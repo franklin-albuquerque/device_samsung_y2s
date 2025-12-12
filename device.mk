@@ -66,8 +66,8 @@ PRODUCT_COPY_FILES += \
 
 $(call soong_config_set,wpa_supplicant_8,board_wlan_bcmdhd_sae,true)
 
-# Inherit from common
-$(call inherit-product, device/samsung/universal9830-common/device-common.mk)
+# Inherit from Hubble
+$(call inherit-product, device/samsung/universal9830-common/device-hubble.mk)
 
 # Inherit from the proprietary version
 $(call inherit-product-if-exists, vendor/samsung/y2s/y2s-vendor.mk)
